@@ -1,0 +1,90 @@
+h1 {
+  font-size: 250%;
+}
+
+#socialF a{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 0 0 0 0;
+  position: absolute;
+  top: 4%;
+  right: 25%;
+}
+#socialT a{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 0 0 0 0;
+  position: absolute;
+  top: 4%;
+  right: 18%;
+}
+#socialG a{
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 0 0 0 0;
+  position: absolute;
+  top: 4%;
+  right: 11%;
+}
+
+ul#menu {
+    padding: 0;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    background-color: black;
+    color: white;
+    margin: 4%;
+    padding: 10px 60px;
+    text-decoration: none;
+    border-radius: 0 0 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: orange;
+}
+
+#footer{
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  text-align: center;
+  vertical-align: text-center;
+  position: absolute;
+  top: 95%;
+  height: 5%;
+  left: 0%;
+  right: 0%;
+}
+
+
+
+
+
+#map{
+  position: absolute;
+  left: 5%;
+  bottom: 4%;
+}
+#facebook{
+  position: absolute;
+  right: 5%;
+  bottom: 4%;
+}
+#info{
+  border: 2px solid black;
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  font-size: 150%;
+}
