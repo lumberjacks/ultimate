@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Ultimate Indoor Soccer</title>
+    <title>About Ultimate Indoor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scales for mobile -->
     <link rel="stylesheet" type="text/css" href="../style/styles.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
@@ -15,9 +15,11 @@
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- Imports jquery -->
     <script src="../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
     <script src="../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
-      
-      
-      
+
+
+
+
+
     <!-- Menu/Navigation Bar -->
 
     <div class = "navbar navbar-inverse navbar-static-top"> <!--navbar-fixed-top-->
@@ -35,7 +37,7 @@
 
           <ul class = "nav navbar-nav navbar-right">
 
-            <li class = "active"><a href = "home.html">Home</a></li>
+            <li><a href = "home.html">Home</a></li>
             <li><a href = "schedule.html">Schedules</a></li>
             <li class = "dropdown">
                 <a href = "team_standing.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
@@ -55,7 +57,7 @@
                 <li><a href = "top_player.html">Top Players</a></li>
               </ul>
             </li>
-            <li class = "dropdown">
+            <li class = "active dropdown">
                 <a href = "facility.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">About
                     <b class = "caret"></b></a> 
                 <ul class = "dropdown-menu">
@@ -87,87 +89,108 @@
 
 
 
-
-    <!--JumboTron -->
-
-    <div class = "container">
-      <div class = "jumbotron text-center">
-        <h1>Ultimate Indoor</h1>
-        <p>Welcome to Ultimate Indoor. We offer Utah's most state-of-the-art indoor soccer facility.
-          Whether you're looking for youth, adult or co-ed league play,
-          you will find our management and facility the ULTIMATE.</p>
-          <!--<img src = "../img/logo.gif" alt = "Logo" class = "img-center">-->
-          <a class = "btn btn-default>">Watch Now!</a>
-          <a href = "#" class = "btn btn-info">Tweet It</a>
-      </div>
-    </div>
-
-
-
-
-
-    <!-- Grid System (content) -->
-
-    <div class = "container">
-
-      <div class = "row">
-
-        <div class = "col-md-4"> <!-- sm or lg -->
-          <h3><a href ="#">Soccer Leagues</a></h3>
-          <p>Call for Soccer information. We are offering Adult, Youth, and Co-Ed Leagues. Call today or stop by for more information.</p>
-          <a href = "#" class = "btn btn-default">Read More</a>
-        </div>
-
-        <div class = "col-md-4"> <!-- sm or lg -->
-          <h3><a href ="#">Dodgeball Leagues</a></h3>
-          <p>Call for Dodgeball information. We are offering Adult, Youth, and Co-Ed Leagues. Call today or stop by for more information.</p>
-          <a href = "#" class = "btn btn-default">Read More</a>
-        </div>
-          
-        <div class = "col-md-4"> <!-- sm or lg -->
-          <h3><a href ="#">Ultimate Frisbee Leagues</a></h3>
-          <p>Call for Ultimate Frisbee information. We are offering Adult, Youth, and Co-Ed Leagues. Call today or stop by for more information.</p>
-          <a href = "#" class = "btn btn-default">Read More</a>
-        </div>
-
-      </div>
-        
-    <div class = "row">
-        
-     <div class = "col-md-4"> <!-- sm or lg -->
-          <h3><a href ="#">Flag Football Leagues</a></h3>
-          <p>Call for Flag Football information. We are offering Adult, Youth, and Co-Ed Leagues. Call today or stop by for more information.</p>
-          <a href = "#" class = "btn btn-default">Read More</a>
-        </div>
-          
-        <div class = "col-md-4"> <!-- sm or lg -->
-          <h3><a href ="#">Lacrosse Leagues</a></h3>
-          <p>Call for Lacrosse information. We are offering Adult, Youth, and Co-Ed Leagues. Call today or stop by for more information.</p>
-          <a href = "#" class = "btn btn-default">Read More</a>
-        </div>
-
-        
-        <div class = "col-md-4"> <!-- sm or lg -->
-          <h3><a href ="#">Waiver Form</a></h3>
-          <p>Release and waiver of liability, assumption of risk, and indemnity and parental consent agreement ("agreement")</p>
-          <a href = "../doc/waiver.pdf" class = "btn btn-default">Waiver Form</a>
-        </div>
-        
-    </div>
-
-    </div>
-
-
       
       
+
+    <!-- Photo Carousel -->
+    <div class = "container">
+        <div id = "myCarousel" class = "carousel slide" data-ride = "carousel">
+
+        <ol class = "carousel-indicators">
+          <li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+          <li data-target = "#myCarousel" data-slide-to = "1"></li>
+          <li data-target = "#myCarousel" data-slide-to = "2"></li>
+        </ol>
+
+
+        <div class = "carousel-inner">
+
+          <div class = "item active">
+            <img src = "../img/mountain.jpg" alt = "Mountain" class = "img-responsive">
+            <div class = "carousel-caption">
+              <h3>Mountain</h3>
+              <p>"I've got 99 problems and hiking this mountain is a big one"</p>
+            </div>
+          </div>
+
+          <div class = "item">
+            <img src = "../img/park.jpg" alt = "Park" class = "img-responsive">
+            <div class = "carousel-caption">
+              <h3>Park</h3>
+              <p>"Who the heck goes to a park?"</p>
+              <p>"Birds... birds Richard"</p>
+            </div>
+          </div>
+
+          <div class = "item">
+            <img src = "../img/beach.jpg" alt = "Beach" class = "img-responsive">
+            <div class = "carousel-caption">
+              <h3>Beach</h3>
+              <p>Sandy baby, yeah</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Rotate Automatically 
+        <script script type="text/javascript">
+            $('.carousel').carousel({interval:2000})
+        </script>  -->
+
+
+        <!-- Add Next and Previous Buttons
+
+        <a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">
+          <span class = "icon-prev"></sapn
+        </a>
+        <a class = "carousel-control right" href = "#myCarousel" data-slide = "next">
+          <span class = "icon-next"></sapn
+          </a>-->
+            
+            
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		    	<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		    	<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>    
+
+      </div>
+  </div>
+
+
+    <!-- Google Maps Embed -->
+    <br><br>
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span8">
+                <iframe width="50%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/search?q=Ultimate%20Indoor%2C%20West%202425%20South%2C%20Woods%20Cross%2C%20UT%2C%20United%20States&key=AIzaSyByzjBkEtPdHkUuMWFzz4dIkWV4lT7aauI"></iframe>
+            </div>
+
+    	</div>
+    </div>
+</div>   
+      
+      
+    
+
+
+    <!--<div id="map">
+      <iframe width="700" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=Ultimate%20Indoor%2C%20West%202425%20South%2C%20Woods%20Cross%2C%20UT%2C%20United%20States&key=AIzaSyByzjBkEtPdHkUuMWFzz4dIkWV4lT7aauI"></iframe>
+    </div>
+
+    <div id="facebook">
+      <iframe width="300" height="515" frameborder="0" style="border:0" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FUltimate-Indoor-Soccer%2F123116327705217%3Fref%3Dts&width=300&height=515&colorscheme=light&show_faces=true&header=true&stream=true&show_border=true"></iframe>
+    </div>-->
+
 
 
     <!-- Footer -->
 
     <div class ="navbar navbar-default navbar-fixed-bottom">
       <div class = "container">
-       <p class = "navbar-text pull-left">Site By Thomas Fisher</p>
-       <a href = "#" class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
+        <p class = "navbar-text pull-left">Site By Thomas Fisher</p>
+        <a href = "#" class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
       </div>
     </div>
 

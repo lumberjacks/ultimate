@@ -2,28 +2,285 @@
 
 <html>
   <head>
-    <title>Ultimate Schedule</title>
+    <title>Ultimate Indoor Schedules</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scales for mobile -->
     <link rel="stylesheet" type="text/css" href="../style/styles.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
   </head>
+
+
   <body>
 
-
-  <h1>Contact</h1>
-  <p id="socialF"><a href="https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?ref=ts">F</a></p>
-  <p id="socialT"><a href="https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?ref=ts">T</a></p>
-  <p id="socialG"><a href="https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?ref=ts">G+</a></p>
-
-  <hr>
-
-  <ul id="menu">
-   <li><a href="home.html">HOME</a></li>
-   <li><a href="schedule.html">SCHEDULE</a></li>
-   <li><a href="contact.html">CONTACT</a></li>
-   <li><a href="about.html">ABOUT</a></li>
-  </ul>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- Imports jquery -->
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- Imports jquery -->
+    <script src="../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
+    <script src="../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
 
 
-  <p id="footer"><a href="http://www.lumberjacks.com">WEBSITE DESIGNED AND CREATED BY THE LUMBERJACKS</a></p>
+
+
+
+    <!-- Menu/Navigation Bar -->
+
+    <div class = "navbar navbar-inverse navbar-static-top"> <!--navbar-fixed-top-->
+      <div class = "container">
+
+        <a href="home.html" class = "navbar-brand">Ultimate Indoor</a> <!-- div instead of a -->
+
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+        </button>
+
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+
+          <ul class = "nav navbar-nav navbar-right">
+
+            <li><a href = "home.html">Home</a></li>
+            <li class = "active"><a href = "schedule.html">Schedules</a></li>
+            <li class = "dropdown">
+                <a href = "team_standing.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
+                    <b class = "caret"></b></a> 
+                <ul class = "dropdown-menu">
+                <li><a href = "team_register.html">Register a Team</a></li>
+                <li><a href = "find_team.html">Find a Team</a></li>
+                <li><a href = "find_player.html">Find a Player</a></li>
+                <li><a href = "team_standing.html">Team Standings</a></li>
+              </ul>
+            </li>
+            <li class = "dropdown">
+                <a href = "player_profile.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Players
+                    <b class = "caret"></b></a> 
+                <ul class = "dropdown-menu">
+                <li><a href = "player_profile.html">My Profile</a></li>
+                <li><a href = "top_player.html">Top Players</a></li>
+              </ul>
+            </li>
+            <li class = "dropdown">
+                <a href = "facility.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">About
+                    <b class = "caret"></b></a> 
+                <ul class = "dropdown-menu">
+                <li><a href = "experience.html">The Ultimate Experience</a></li>
+                <li><a href = "facility.html">The Facilities</a></li>
+                <li><a href = "leagues.html">The Leagues</a></li>
+              </ul>
+            </li>
+            <li class = "dropdown">
+              <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Social Media 
+                  <b class = "caret"></b></a>
+              <ul class = "dropdown-menu">
+                <li><a href = "https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?sk=timeline">Facebook</a></li>
+                <li><a href = "#">Instagram</a></li>
+                <li><a href = "#">Twitter</a></li>
+                <li><a href = "#">Google+</a></li>
+                <li><a href = "#">LinkedIn</a></li>
+                <li><a href = "#">YouTube</a></li>
+              </ul>
+            </li>
+            <li><a href = "#contact" data-toggle = "modal">Contact Us</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <!-- Schedule -->
+    <div class="container">
+        <h3>Ultimate Indoor Soccer Schedule</h3>
+            <div class="row">
+                <div class="col-md-4 games-schedule">
+                    <div class="well">
+                        <div class="games-schedule-title">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class = "text-center">Todays Games (12/16/2014)</h4><br>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <div class="games-schedule-items">
+                            <div class="row games-team">
+                                <div class="col-md-5">
+                                    <img src="http://placehold.it/115x67" alt="Bangladesh">
+                                    <h5>Boats N Hoes</h5>
+                                </div>
+                                <div class="col-md-2">
+                                    <h4 class="img-circle">VS.</h4>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="http://placehold.it/115x67" alt="Australia">
+                                    <h5>I Love Lamp</h5>
+                                </div>
+                            </div>
+                            <div class="row games-info">
+                                <div class="col-md-12">
+                                    <p class = "text-center">16 December, 2014 (<small>9:25 MST</small>)</p>
+                                    <p class="games-dash"></p>
+                                    <p class = "text-center">Red Field</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="games-schedule-items">
+                            <div class="row games-team">
+                                <div class="col-md-5">
+                                    <img src="http://placehold.it/115x67" alt="Bangladesh">
+                                    <h5>Boats N Hoes</h5>
+                                </div>
+                                <div class="col-md-2">
+                                    <h4 class="img-circle">VS.</h4>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="http://placehold.it/115x67" alt="Australia">
+                                    <h5>I Love Lamp</h5>
+                                </div>
+                            </div>
+                            <div class="row games-info">
+                                <div class="col-md-12">
+                                    <p class = "text-center">16 December, 2014 (<small>9:25 MST</small>)</p>
+                                    <p class="games-dash"></p>
+                                    <p class = "text-center">Red Field</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="games-schedule-items">
+                            <div class="row games-team">
+                                <div class="col-md-5">
+                                    <img src="http://placehold.it/115x67" alt="Bangladesh">
+                                    <h5>Boats N Hoes</h5>
+                                </div>
+                                <div class="col-md-2">
+                                    <h4 class="img-circle">VS.</h4>
+                                </div>
+                                <div class="col-md-5">
+                                    <img src="http://placehold.it/115x67" alt="Australia">
+                                    <h5>I Love Lamp</h5>
+                                </div>
+                            </div>
+                            <div class="row games-info">
+                                <div class="col-md-12">
+                                    <p class = "text-center">16 December, 2014 (<small>9:25 MST</small>)</p>
+                                    <p class="games-dash"></p>
+                                    <p class = "text-center">Red Field</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                    
+                        <div class="games-schedule-footer">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-left">January 2014</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="text-right">&COPY;Ultimate Indoor</p>
+                                </div>
+                            </div>
+                        </div>
+                          
+                </div>
+            </div>
+        </div>
+    </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    <!-- Footer -->
+
+    <div class ="navbar navbar-default navbar-fixed-bottom">
+      <div class = "container">
+        <p class = "navbar-text pull-left">Site By Thomas Fisher</p>
+        <a href = "#" class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Email Modal -->
+    <div class = "modal fade" id = "contact" role = "dialog">
+      <div class = "modal-dialog">
+        <div class = "modal-content">
+            <form class = "form-horizontal">
+              <div class = "modal-header">
+                <h2>Contact Ultimate Indoor</h2>
+              
+                  <div class = "modal-body">
+                  <div class = "form-group">
+                      <label for = "contact-name" class = "col-lg-2 control-label">Name:</label>
+                      <div class = "col-lg-10">
+                        <input type = "text" class = "form-control" id = "contact-name" placeholder = "Full Name">  
+                      </div>
+                  </div>
+                  
+                  <div class = "form-group">
+                      <label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+                      <div class = "col-lg-10">
+                        <input type = "email" class = "form-control" id = "contact-email" placeholder = "you@example.com">  
+                      </div>
+                  </div>
+                  
+                  <div class = "form-group">
+                      <label for = "contact-msg" class = "col-lg-2 control-label">Message:</label>
+                      <div class = "col-lg-10">
+                        <textarea class = "form-control" rows = "8"></textarea>
+                      </div>
+                  </div> 
+              </div>
+                  
+              <div class = "modal-footer">
+                <a class = "btn btn-default" data-dismiss = "modal">Close</a>
+                <button class = "btn btn-primary" type = "submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
 
   </body>
 </html>
