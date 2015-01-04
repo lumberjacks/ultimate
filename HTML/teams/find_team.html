@@ -2,10 +2,10 @@
 
 <html>
   <head>
-    <title>Ultimate Indoor Soccer</title>
+    <title>Find a Team</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scales for mobile -->
-    <link rel="stylesheet" type="text/css" href="../style/styles.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../../style/styles.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
   </head>
 
 
@@ -13,8 +13,8 @@
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- Imports jquery -->
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- Imports jquery -->
-    <script src="../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
-    <script src="../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
+    <script src="../../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
+    <script src="../../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
 
 
 
@@ -22,10 +22,10 @@
 
     <!-- Menu/Navigation Bar -->
 
-    <div class = "navbar navbar-inverse navbar-static-top"> <!--navbar-fixed-top-->
+    <div class = "navbar navbar-inverse navbar-fixed-top"> 
       <div class = "container">
 
-        <a href="home.html" class = "navbar-brand">Ultimate Indoor</a> <!-- div instead of a -->
+        <a href="../index.html" class = "navbar-brand">Ultimate Indoor</a> <!-- div instead of a -->
 
         <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
           <span class = "icon-bar"></span>
@@ -37,10 +37,10 @@
 
           <ul class = "nav navbar-nav navbar-right">
 
-            <li><a href = "home.html">Home</a></li>
-            <li><a href = "schedule.html">Schedules</a></li>
+            <li><a href = "../index.html">Home</a></li>
+            <li><a href = "../schedule.html">Schedules</a></li>
             <li class = " active dropdown">
-                <a href = "team_standing.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
                     <b class = "caret"></b></a> 
                 <ul class = "dropdown-menu">
                 <li><a href = "team_register.html">Register a Team</a></li>
@@ -50,35 +50,32 @@
               </ul>
             </li>
             <li class = "dropdown">
-                <a href = "player_profile.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Players
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Player
                     <b class = "caret"></b></a> 
                 <ul class = "dropdown-menu">
-                <li><a href = "player_profile.html">My Profile</a></li>
-                <li><a href = "top_player.html">Top Players</a></li>
+                <li><a href = "../players/login.html">My Profile</a></li>
+                <li><a href = "../players/team_profile.html">My Team</a></li>
+                <li><a href = "../players/top_player.html">Top Players</a></li>
               </ul>
             </li>
-            <li class = "dropdown">
-                <a href = "facility.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">About
-                    <b class = "caret"></b></a> 
-                <ul class = "dropdown-menu">
-                <li><a href = "experience.html">The Ultimate Experience</a></li>
-                <li><a href = "facility.html">The Facilities</a></li>
-                <li><a href = "leagues.html">The Leagues</a></li>
-              </ul>
-            </li>
-            <li class = "dropdown">
-              <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Social Media 
-                  <b class = "caret"></b></a>
-              <ul class = "dropdown-menu">
-                <li><a href = "https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?sk=timeline">Facebook</a></li>
-                <li><a href = "#">Instagram</a></li>
-                <li><a href = "#">Twitter</a></li>
-                <li><a href = "#">Google+</a></li>
-                <li><a href = "#">LinkedIn</a></li>
-                <li><a href = "#">YouTube</a></li>
-              </ul>
-            </li>
+            <li><a href = "../about.html">About</a></li>
             <li><a href = "#contact" data-toggle = "modal">Contact Us</a></li>
+            <li class = "dropdown">
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Login
+                    <b class = "caret"></b>
+                </a> 
+                <ul class = "dropdown-menu">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <a href = "players/player_profile.html"><button type="submit" class="btn btn-default">Sign In</button></a>
+                </form>
+              </ul>
+            </li>
 
           </ul>
 
@@ -112,7 +109,7 @@
                         </figure>
                     </div>
                     <div class="col-md-6">
-                       <h4 class="list-group-item-heading">The Lumberjacks</h4>
+                       <h4 class="list-group-item-heading">The Lumberjacks</h4><h4>Position Needed: Goalie</h4>
                         <p class="list-group-item-text">We are in the Men's League C looking for a goalie that can help us get out of last place. Anyone welcome, we already tried a sack of potatoes but the rules are oddly specific and prohibit "any use of non-human items as team members including but not limited to chairs, innanimatae dummies (animated dumies are allowed only if life sized), and spuds in their various forms. We're going to try using our girlfriends next... please dont make us go that low.
                         </p>
                     </div>
@@ -129,7 +126,7 @@
                         </figure>
                     </div>
                     <div class="col-md-6">
-                       <h4 class="list-group-item-heading">The Lumberjacks</h4>
+                       <h4 class="list-group-item-heading">The Lumberjacks</h4><h4>Position Needed: Goalie</h4>
                         <p class="list-group-item-text">We are in the Men's League C looking for a goalie that can help us get out of last place. Anyone welcome, we already tried a sack of potatoes but the rules are oddly specific and prohibit "any use of non-human items as team members including but not limited to chairs, innanimatae dummies (animated dumies are allowed only if life sized), and spuds in their various forms. We're going to try using our girlfriends next... please dont make us go that low.
                         </p>
                     </div>
@@ -146,7 +143,7 @@
                         </figure>
                     </div>
                     <div class="col-md-6">
-                       <h4 class="list-group-item-heading">The Lumberjacks</h4>
+                       <h4 class="list-group-item-heading">The Lumberjacks</h4><h4>Position Needed: Goalie</h4>
                         <p class="list-group-item-text">We are in the Men's League C looking for a goalie that can help us get out of last place. Anyone welcome, we already tried a sack of potatoes but the rules are oddly specific and prohibit "any use of non-human items as team members including but not limited to chairs, innanimatae dummies (animated dumies are allowed only if life sized), and spuds in their various forms. We're going to try using our girlfriends next... please dont make us go that low.
                         </p>
                     </div>
@@ -160,48 +157,19 @@
 	</div>
 </div>
       
+
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+        
 
 
     <!-- Footer -->
 
     <div class ="navbar navbar-default navbar-fixed-bottom">
       <div class = "container">
-        <p class = "navbar-text pull-left">Site By Thomas Fisher</p>
-        <a href = "#" class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
+        <p class = "navbar-text pull-left">Site By Lumberjacks</p>
+        <a href = "https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?sk=timeline" target="_blank">
+            <button class = "btn btn-social btn-facebook pull-right" >Facebook</button>
+        </a>
       </div>
     </div>
 

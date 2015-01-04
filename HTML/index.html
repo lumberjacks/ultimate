@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Ultimate Indoor Soccer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scales for mobile -->
+    <link rel="stylesheet" type="text/css" href="../style/styles.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
+  </head>
+
+
+  <body>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- Imports jquery -->
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- Imports jquery -->
+    <script src="../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
+    <script src="../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
+      
+      
+      
+    <!-- Menu/Navigation Bar -->
+
+    <div class = "navbar navbar-inverse navbar-fixed-top"> <!--navbar-static-top-->
+        <div class = "container">
+
+        <a href="index.html" class = "navbar-brand">Ultimate Indoor</a> <!-- div instead of a -->
+        
+
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+        </button>
+
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+
+          <ul class = "nav navbar-nav navbar-right">
+
+            <li class = "active"><a href = "index.html">Home</a></li>
+            <li><a href = "schedule.html">Schedules</a></li>
+            <li class = "dropdown">
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
+                    <b class = "caret"></b></a> 
+                <ul class = "dropdown-menu">
+                <li><a href = "teams/team_register.html">Register a Team</a></li>
+                <li><a href = "teams/find_team.html">Find a Team</a></li>
+                <li><a href = "teams/find_player.html">Find a Player</a></li>
+                <li><a href = "teams/team_standing.html">Team Standings</a></li>
+              </ul>
+            </li>
+            <li class = "dropdown">
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Player
+                    <b class = "caret"></b></a> 
+                <ul class = "dropdown-menu">
+                <li><a href = "players/login.html">My Profile</a></li>
+                <li><a href = "players/team_profile.html">My Team</a></li>
+                <li><a href = "players/top_player.html">Top Players</a></li>
+              </ul>
+            </li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "#contact" data-toggle = "modal">Contact Us</a></li>
+            <li class = "dropdown">
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Login
+                    <b class = "caret"></b>
+                </a> 
+                <ul class = "dropdown-menu">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <a href = "players/player_profile.html"><button type="submit" class="btn btn-default">Sign In</button></a>
+                </form>
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!--JumboTron -->
+
+    <div class = "container">
+      <div class = "jumbotron text-center">
+        <h1>Ultimate Indoor</h1>
+        <p>Welcome to Ultimate Indoor. We offer Utah's most state-of-the-art indoor soccer facility.
+          Whether you're looking for youth, adult or co-ed league play,
+          you will find our management and facility the ULTIMATE.</p>
+          <img src = "../img/logo.gif" width = "75%" alt = "Logo" class = "img-center">
+          <!--<a class = "btn btn-default>">Watch Now!</a>
+          <a href = "#" class = "btn btn-info">Tweet It</a>-->
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Grid System (content) -->
+
+    <div class = "container">
+
+      <div class = "row">
+
+        <div class = "list-group col-md-3"> <!-- sm or lg -->
+            <a href ="players/login.html" class = "list-group-item">
+                <h3>Login or Create a Player Profile</h3>
+                <p>Click here to login to your player page. With an Ultimate Indoor Account you can update your player information, search for
+                   available teams to play with, view your team's profile, and more.</p>
+          </a>
+        </div>
+
+        <div class = " list-group col-md-3"> <!-- sm or lg -->
+            <a href ="schedule.html" class = "list-group-item">
+                <h3>Schedules</h3>
+                <p>Click here to view the schedules for both the red and the white fields. Also note there is a practice field in the
+                   northeast corner of the facility free for teams to warm up on before their games.</p>
+            </a>
+        </div>
+          
+        <div class = "list-group col-md-3">
+            <a href="teams/team_standing.html" class = "list-group-item">
+                <h3>Team Standings</h3>
+				<p>Click here to see the current standings for all soccer leagues. Note it may take up to two days after a game to be inputed and show online.</p>
+            </a>
+        </div>
+          
+        <div class = "list-group col-md-3">
+            <a href="players/top_player.html" class = "list-group-item">
+                <h3>Top Players</h3>
+				<p>Click here to view the listing for top players in all leagues. Rankings are based solely on goals scored in one session. </p>
+            </a>
+        </div>
+
+      </div>
+        
+    <div class = "row">
+        
+        <div class = "list-group col-md-4"> <!-- sm or lg -->
+            <a href ="#" class = "list-group-item">
+                <h3>Soccer Leagues</h3>
+                <p>Call for Soccer league information. We are offering Adult, Youth, and Co-Ed Leagues. Call today or stop by for more information.</p>
+            </a>
+        </div>
+          
+        <div class = "list-group col-md-4"> <!-- sm or lg -->
+            <a href ="#" class = "list-group-item">
+                <h3>C.A.M.P. Training</h3>
+                <p>Call for information about our in house C.A.M.P. training facility and trainers. Ultimate Indoor is the perfect place for your team to play and train.                   </p>
+            </a>
+        </div>
+
+        <div class = "list-group col-md-4">
+            <a href="../doc/waiver.pdf" class = "list-group-item">
+                <h3>Waiver Form</h3>
+				<p >Release and waiver form of liability, assumption of risk, and indemnity and parental consent agreement ("agreement").</p>
+            </a>
+        </div>  
+     </div>
+
+   </div>
+
+
+
+    <!-- Footer -->
+
+    <div class ="navbar navbar-default navbar-fixed-bottom">
+        <div class = "container">
+            <p class = "navbar-text pull-left">Site By Lumberjacks</p>
+            <a href = "https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?sk=timeline" target="_blank">
+                <button class = "btn btn-social btn-facebook pull-right" >Facebook</button>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Email Modal -->
+    <div class = "modal fade" id = "contact" role = "dialog">
+      <div class = "modal-dialog">
+        <div class = "modal-content">
+            <form class = "form-horizontal">
+              <div class = "modal-header">
+                <h2>Contact Ultimate Indoor</h2>
+              
+                  <div class = "modal-body">
+                  <div class = "form-group">
+                      <label for = "contact-name" class = "col-lg-2 control-label">Name:</label>
+                      <div class = "col-lg-10">
+                        <input type = "text" class = "form-control" id = "contact-name" placeholder = "Full Name">  
+                      </div>
+                  </div>
+                  
+                  <div class = "form-group">
+                      <label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+                      <div class = "col-lg-10">
+                        <input type = "email" class = "form-control" id = "contact-email" placeholder = "you@example.com">  
+                      </div>
+                  </div>
+                  
+                  <div class = "form-group">
+                      <label for = "contact-msg" class = "col-lg-2 control-label">Message:</label>
+                      <div class = "col-lg-10">
+                        <textarea class = "form-control" rows = "8"></textarea>
+                      </div>
+                  </div> 
+              </div>
+                  
+              <div class = "modal-footer">
+                <a class = "btn btn-default" data-dismiss = "modal">Close</a>
+                <button class = "btn btn-primary" type = "submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+</html>

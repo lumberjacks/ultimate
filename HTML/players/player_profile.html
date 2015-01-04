@@ -2,10 +2,10 @@
 
 <html>
   <head>
-    <title>Ultimate Indoor Soccer</title>
+    <title>My Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scales for mobile -->
-    <link rel="stylesheet" type="text/css" href="../style/styles.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../../style/styles.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
   </head>
 
 
@@ -13,8 +13,8 @@
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- Imports jquery -->
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- Imports jquery -->
-    <script src="../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
-    <script src="../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
+    <script src="../../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
+    <script src="../../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
 
 
 
@@ -22,10 +22,10 @@
 
     <!-- Menu/Navigation Bar -->
 
-    <div class = "navbar navbar-inverse navbar-static-top"> <!--navbar-fixed-top-->
+    <div class = "navbar navbar-inverse navbar-fixed-top"> 
       <div class = "container">
 
-        <a href="home.html" class = "navbar-brand">Ultimate Indoor</a> <!-- div instead of a -->
+        <a href="../index.html" class = "navbar-brand">Ultimate Indoor</a> <!-- div instead of a -->
 
         <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
           <span class = "icon-bar"></span>
@@ -37,48 +37,45 @@
 
           <ul class = "nav navbar-nav navbar-right">
 
-            <li><a href = "home.html">Home</a></li>
-            <li><a href = "schedule.html">Schedules</a></li>
+            <li><a href = "../index.html">Home</a></li>
+            <li><a href = "../schedule.html">Schedules</a></li>
             <li class = "dropdown">
-                <a href = "team_standing.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
                     <b class = "caret"></b></a> 
                 <ul class = "dropdown-menu">
-                <li><a href = "team_register.html">Register a Team</a></li>
-                <li><a href = "find_team.html">Find a Team</a></li>
-                <li><a href = "find_player.html">Find a Player</a></li>
-                <li><a href = "team_standing.html">Team Standings</a></li>
+                <li><a href = "../teams/team_register.html">Register a Team</a></li>
+                <li><a href = "../teams/find_team.html">Find a Team</a></li>
+                <li><a href = "../teams/find_player.html">Find a Player</a></li>
+                <li><a href = "../teams/team_standing.html">Team Standings</a></li>
               </ul>
             </li>
             <li class = "active dropdown">
-                <a href = "player_profile.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Players
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Player
                     <b class = "caret"></b></a> 
                 <ul class = "dropdown-menu">
-                <li><a href = "player_profile.html">My Profile</a></li>
+                <li><a href = "login.html">My Profile</a></li>
+                <li><a href = "team_profile.html">My Team</a></li>
                 <li><a href = "top_player.html">Top Players</a></li>
               </ul>
             </li>
-            <li class = "dropdown">
-                <a href = "facility.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">About
-                    <b class = "caret"></b></a> 
-                <ul class = "dropdown-menu">
-                <li><a href = "experience.html">The Ultimate Experience</a></li>
-                <li><a href = "facility.html">The Facilities</a></li>
-                <li><a href = "leagues.html">The Leagues</a></li>
-              </ul>
-            </li>
-            <li class = "dropdown">
-              <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Social Media 
-                  <b class = "caret"></b></a>
-              <ul class = "dropdown-menu">
-                <li><a href = "https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?sk=timeline">Facebook</a></li>
-                <li><a href = "#">Instagram</a></li>
-                <li><a href = "#">Twitter</a></li>
-                <li><a href = "#">Google+</a></li>
-                <li><a href = "#">LinkedIn</a></li>
-                <li><a href = "#">YouTube</a></li>
-              </ul>
-            </li>
+            <li><a href = "../about.html">About</a></li>
             <li><a href = "#contact" data-toggle = "modal">Contact Us</a></li>
+            <li class = "dropdown">
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Login
+                    <b class = "caret"></b>
+                </a> 
+                <ul class = "dropdown-menu">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <a href = "players/player_profile.html"><button type="submit" class="btn btn-default">Sign In</button></a>
+                </form>
+              </ul>
+            </li>
 
           </ul>
 
@@ -102,26 +99,14 @@
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
             <div class="panel panel-info">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Thomas Fisher</h3>
+                    <h3 class="panel-title">John Smith</h3>
                 </div>
                 
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-md-3 col-lg-3 " align="center"> 
-                            <img alt="User Pic" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle">                           </div>
+                            <img alt="User Pic" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100" class="img-circle">                </div>
                 
-                        <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
-                          <dl>
-                            <dt>DEPARTMENT:</dt>
-                            <dd>Administrator</dd>
-                            <dt>HIRE DATE</dt>
-                            <dd>11/12/2013</dd>
-                            <dt>DATE OF BIRTH</dt>
-                               <dd>11/12/2013</dd>
-                            <dt>GENDER</dt>
-                            <dd>Male</dd>
-                          </dl>
-                        </div>-->
                   
                         <div class=" col-md-9 col-lg-9 "> 
                             <table class="table table-user-information">
@@ -152,11 +137,10 @@
                                  </tr>
                                 <tr>
                                     <td>Email</td>
-                                    <td><a href="mailto:info@support.com">info@support.com</a></td>
+                                    <td><a href="mailto:info@support.com">john@email.com</a></td>
                                 </tr>
                                     <td>Phone Number</td>
-                                    <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
-                                        <br><br>
+                                    <td>123-456-7890 (Mobile)<br><br>
                               </tbody>
                               <tbody>
                                 <tr>
@@ -176,23 +160,26 @@
                               <tbody>
                                 <tr>
                                     <td>Previous Teams</td>
-                                    <td>Woods Cross Varsity (K. Rigby)<br><br>Forza Futbol (R. Egan)<br><br>
+                                    <td>Woods Cross Varsity (K. Rigby)<br><br>Forza Futbol (R. Egan)<br>
                               </tbody>
                             </table>
                   
-                            <a href="#" class="btn btn-primary">Find a Team</a>
-                            <!--<a href="#" class="btn btn-primary">Team Sales Performance</a>-->
+                            <a href="#" class="btn btn-success">Your Team</a>
+                            <a href="../teams/find_team.html" class="btn btn-success">Find a Team</a>
+                            <a href="#" class="btn btn-success">Go Public </a><br>
+                            <small>You may find a team looking for players and request to join with them, or by</small>
+                            <small>going public you allow other teams to search for and find your profile, and then request your services.</small>
                             
                     </div>
                 </div>
             </div>
                 
             <div class="panel-footer">
-                <a href = "../doc/waiver.pdf" title = "Waiver Form" data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary">
+                <a href = "../../doc/waiver.pdf" title = "Waiver Form" data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary">
                    <i class="glyphicon glyphicon-file"></i>
                 </a>
                 <span class="pull-right">
-                    <a href="#edit" data-toggle = "modal" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning">
+                    <a href="#edit" data-toggle = "modal" type="button" class="btn btn-sm btn-warning">
                         <i class="glyphicon glyphicon-edit"></i></a>
                 </span>
             </div>
@@ -213,19 +200,16 @@
 
     <div class ="navbar navbar-default navbar-fixed-bottom">
       <div class = "container">
-        <p class = "navbar-text pull-left">Site By Thomas Fisher</p>
-        <a href = "#" class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
+        <p class = "navbar-text pull-left">Site By Lumberjacks</p>
+        <a href = "https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?sk=timeline" target="_blank">
+            <button class = "btn btn-social btn-facebook pull-right" >Facebook</button>
+        </a>
       </div>
     </div>
 
-
-
-
       
       
-      
-      
-    <!-- Email Modal -->
+    <!-- Edit Info Modal -->
     <div class = "modal fade" id = "edit" role = "dialog">
           <div class = "modal-dialog">
             <div class = "modal-content">
@@ -242,21 +226,45 @@
                             <div id="myTabContent" class="tab-content">
                               <div class="tab-pane active in" id="home">
                                 <form id="tab">
-                                    <br><label>Current Team</label>
-                                    <input type="text" value="team name" class="input-xlarge"><br>
-                                    <label>Preferred Position</label>
-                                    <input type="text" value="defender" class="input-xlarge"><br>
-                                    <label>Gender</label>
-                                    <input type="text" value="male" class="input-xlarge"><br>
-                                    <label>Address</label><br>
-                                    <textarea value="Smith" rows="3" class="input-xlarge">2817 S 49th
+                                    
+                                    <div class="control-group">
+                                            <label class="control-label">Current Team</label>
+                                            <div class="controls">
+                                                <input id="curr-team" name="team" type="text" placeholder="Lumberjacks" class="input-xlarge">
+                                                <p class="help-block"></p>
+                                            </div>
+                                    </div>
+                                    <div class="control-group">
+                                            <label class="control-label">Preferred Position</label>
+                                            <div class="controls">
+                                                <input id="pref-position" name="position" type="text" placeholder="Defender" class="input-xlarge">
+                                                <p class="help-block"></p>
+                                            </div>
+                                    </div>
+                                    <div class="control-group">
+                                            <label class="control-label">Address</label>
+                                            <div class="controls">
+                                                <textarea id="home-address" name="address" rows = "3" class="input-xlarge" placeholder="2817 S 49th 
 Apt 314
-San Jose, CA 95101
-                                    </textarea><br>
-                                    <label>Email</label>
-                                    <input type="text" value="jsmith@email.com" class="input-xlarge"><br>
-                                    <label>Phone Number</label>
-                                    <input type="text" value="801-555-5555" class="input-xlarge"><br>
+San Jose, CA 95101"></textarea>
+                                                <p class="help-block"></p>
+                                            </div>
+                                    </div>
+                                    <div class="control-group">
+                                            <label class="control-label">Email</label>
+                                            <div class="controls">
+                                                <input id="email-address" name="email" type = "email" placeholder="john@email.com" class="input-xlarge">
+                                                <p class="help-block"></p>
+                                            </div>
+                                    </div>
+                                    <div class="control-group">
+                                            <label class="control-label">Phone Number</label>
+                                            <div class="controls">
+                                                <input id="phone-number" name="phone" type="tel" placeholder="john@email.com" class="input-xlarge">
+                                                <p class="help-block"></p>
+                                            </div>
+                                    </div>
+                                    
                                     <div>
                                         <button class="btn btn-primary">Update</button>
                                     </div>
@@ -264,10 +272,14 @@ San Jose, CA 95101
                               </div>
                               <div class="tab-pane fade" id="profile">
                                 <form id="tab2">
-                                    <label>New Password</label>
-                                    <input type="password" class="input-xlarge">
-                                    <div>
-                                        <button class="btn btn-primary">Update</button>
+                                    <div class="control-group">
+                                            <label class="control-label">New Password</label>
+                                            <div class="controls">
+                                                <input id="new-password" name="new-pass" type="password" class="input-xlarge">
+                                                <p class="help-block"></p>
+                                            </div>
+                                    </div>
+                                    <button class="btn btn-primary">Update</button>
                                     </div>
                                 </form>
                               </div>
@@ -281,14 +293,12 @@ San Jose, CA 95101
               </div>
             </div>
           </div>
+        </div>
     </div>
       
       
       
       
-      
-      
-    
       
       
     <!-- Email Modal -->

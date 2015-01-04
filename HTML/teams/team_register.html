@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Register a Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scales for mobile -->
+    <link rel="stylesheet" type="text/css" href="../../style/styles.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
+  </head>
+
+
+  <body>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- Imports jquery -->
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- Imports jquery -->
+    <script src="../../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
+    <script src="../../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
+    <script src="http://lipis.github.io/bootstrap-sweetalert/lib/sweet-alert.js"></script><!-- Link for success notification -->
+    <link rel="stylesheet" href="http://lipis.github.io/bootstrap-sweetalert/lib/sweet-alert.css"><!-- Link for success notification -->
+
+    <script>
+        document.querySelector('.sweet-12').onclick = function(){
+        swal({
+            title: "Are you sure?",
+            text: "You will not be able to recover this imaginary file!",
+            type: "success",
+            showCancelButton: true,
+            confirmButtonClass: 'btn-success',
+            confirmButtonText: 'Success!'
+            });
+        };
+    </script>
+
+
+
+    <!-- Menu/Navigation Bar -->
+
+    <div class = "navbar navbar-inverse navbar-fixed-top"> 
+      <div class = "container">
+
+        <a href="../index.html" class = "navbar-brand">Ultimate Indoor</a> <!-- div instead of a -->
+
+        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+          <span class = "icon-bar"></span>
+        </button>
+
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+
+          <ul class = "nav navbar-nav navbar-right">
+
+            <li><a href = "../index.html">Home</a></li>
+            <li><a href = "../schedule.html">Schedules</a></li>
+            <li class = " active dropdown">
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
+                    <b class = "caret"></b></a> 
+                <ul class = "dropdown-menu">
+                <li><a href = "team_register.html">Register a Team</a></li>
+                <li><a href = "find_team.html">Find a Team</a></li>
+                <li><a href = "find_player.html">Find a Player</a></li>
+                <li><a href = "team_standing.html">Team Standings</a></li>
+              </ul>
+            </li>
+            <li class = "dropdown">
+                <a href = "#" class = "dropdown-toggle " data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Player
+                    <b class = "caret"></b></a> 
+                <ul class = "dropdown-menu">
+                <li><a href = "../players/login.html">My Profile</a></li>
+                <li><a href = "../players/team_profile.html">My Team</a></li>
+                <li><a href = "../players/top_player.html">Top Players</a></li>
+              </ul>
+            </li>
+            <li><a href = "../about.html">About</a></li>
+            <li><a href = "#contact" data-toggle = "modal">Contact Us</a></li>
+            <li class = "dropdown">
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Login
+                    <b class = "caret"></b>
+                </a> 
+                <ul class = "dropdown-menu">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <a href = "players/player_profile.html"><button type="submit" class="btn btn-default">Sign In</button></a>
+                </form>
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- Register a Team -->
+      <div class="container-fluid">
+    <section class="container">
+		<div class="container-page">				
+			<div class="col-md-6">
+				<h3 class="dark-grey">Team Registration</h3>
+				
+				<div class="form-group col-lg-12">
+					<label>Team Name</label>
+					<input type="text" name="" class="form-control" id="" value="">
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<label>Team League</label><br>
+					<select name = "leagues">
+                        <option value = "boys">Boys</option>
+                        <option value = "girls">Girls</option>
+                        <option value = "youth">Youth Coed</option>
+                        <option value = "men">Men</option>
+                        <option value = "women">Women</option>
+                        <option value = "adult">Coed</option>
+                    </select>
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<label>Manager <small>(in charge of team finances)</small></label>
+					<input type="text" name="" class="form-control" id="" value="">
+				</div>
+								
+				<div class="form-group col-lg-6">
+					<label>Manager Email</label>
+					<input type="email" name="" class="form-control" id="" value="">
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<label>Repeat Email Address</label>
+					<input type="" name="" class="form-control" id="" value="">
+				</div>			
+				
+				<div class="col-sm-6">
+					<input type="checkbox" class="checkbox" />I agree to Ultimate Indoor Terms and Conditions
+				</div>
+
+				<div class="col-sm-6">
+					<input type="checkbox" class="checkbox" />Send notifications to this email
+				</div>				
+			
+			</div>
+		
+			<div class="col-md-6">
+				<h3 class="dark-grey">Terms and Conditions</h3>
+				<p>ACKNOWLEDGE, agree, and represent that I understand the nature of the Activity and that I am qualified, in good health, and
+in proper physical condition to participate in such Activity. I further agree and warrant that if at any time I believe conditions to
+be unsafe, I will immediately discontinue further participation in the Activity. </p>
+                 <p>FULLY UNDERSTAND THAT: (a) soccer, dodge ball, football, lacrosse, dances, all night activities, training, or other like
+ACTIVITIES INVOLVE RISKS AND DANGERS OF SERIOUS BODILY INJURY, INCLUDING PERMANENT DISABILITY, PARALYSIS,
+AND DEATH ("RISKS"); (b) these Risks and dangers may be caused by my own actions or inaction’s, the actions or inaction’s of
+others participating in the Activity, the condition in which the Activity takes place, or THE NEGLIGENCE OF THE "RELEASEES"
+NAMED BELOW; (c) there may be OTHER RISK AND SOCIAL AND ECONOMIC LOSSES either not known to me or not readily
+foreseeable at this time; and I FULLY ACCEPT AND ASSUME ALL SUCH RISKS AND ALL RESPONSIBILITY FOR LOSSES, COSTS,
+AND DAMAGES I incur as a result of my participation or that of the minor in the Activity. </p>
+                    
+				<!--<button type="submit" class="btn btn-primary">Register</button>-->
+                <button class="btn btn-lg btn-success sweet-12" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Success']);">Register</button>
+			</div>
+		</div>
+	</section>
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    <!-- Footer -->
+
+    <div class ="navbar navbar-default navbar-fixed-bottom">
+      <div class = "container">
+        <p class = "navbar-text pull-left">Site By Lumberjacks</p>
+        <a href = "https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?sk=timeline" target="_blank">
+            <button class = "btn btn-social btn-facebook pull-right" >Facebook</button>
+        </a>
+      </div>
+    </div>
+
+
+
+
+    <!-- Email Modal -->
+    <div class = "modal fade" id = "contact" role = "dialog">
+      <div class = "modal-dialog">
+        <div class = "modal-content">
+            <form class = "form-horizontal">
+              <div class = "modal-header">
+                <h2>Contact Ultimate Indoor</h2>
+              
+                  <div class = "modal-body">
+                  <div class = "form-group">
+                      <label for = "contact-name" class = "col-lg-2 control-label">Name:</label>
+                      <div class = "col-lg-10">
+                        <input type = "text" class = "form-control" id = "contact-name" placeholder = "Full Name">  
+                      </div>
+                  </div>
+                  
+                  <div class = "form-group">
+                      <label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+                      <div class = "col-lg-10">
+                        <input type = "email" class = "form-control" id = "contact-email" placeholder = "you@example.com">  
+                      </div>
+                  </div>
+                  
+                  <div class = "form-group">
+                      <label for = "contact-msg" class = "col-lg-2 control-label">Message:</label>
+                      <div class = "col-lg-10">
+                        <textarea class = "form-control" rows = "8"></textarea>
+                      </div>
+                  </div> 
+              </div>
+                  
+              <div class = "modal-footer">
+                <a class = "btn btn-default" data-dismiss = "modal">Close</a>
+                <button class = "btn btn-primary" type = "submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+</html>
+

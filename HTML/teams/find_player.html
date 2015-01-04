@@ -2,10 +2,10 @@
 
 <html>
   <head>
-    <title>Ultimate Indoor Soccer</title>
+    <title>Find a Player</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Scales for mobile -->
-    <link rel="stylesheet" type="text/css" href="../style/styles.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../../style/styles.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">  <!-- Links to bootstrap -->
   </head>
 
 
@@ -13,8 +13,8 @@
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- Imports jquery -->
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- Imports jquery -->
-    <script src="../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
-    <script src="../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
+    <script src="../../bootstrap/js/bootstrap.js"></script> <!-- Links to bootstrap JavaScript -->
+    <script src="../../bootstrap/js/bootstrap-hover-dropdown.min.js"></script> <!-- Link to dropdown -->
 
 
 
@@ -22,10 +22,10 @@
 
     <!-- Menu/Navigation Bar -->
 
-    <div class = "navbar navbar-inverse navbar-static-top"> <!--navbar-fixed-top-->
+    <div class = "navbar navbar-inverse navbar-fixed-top"> 
       <div class = "container">
 
-        <a href="home.html" class = "navbar-brand">Ultimate Indoor</a> <!-- div instead of a -->
+        <a href="../index.html" class = "navbar-brand">Ultimate Indoor</a> <!-- div instead of a -->
 
         <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
           <span class = "icon-bar"></span>
@@ -37,10 +37,10 @@
 
           <ul class = "nav navbar-nav navbar-right">
 
-            <li><a href = "home.html">Home</a></li>
-            <li><a href = "schedule.html">Schedules</a></li>
+            <li><a href = "../index.html">Home</a></li>
+            <li><a href = "../schedule.html">Schedules</a></li>
             <li class = " active dropdown">
-                <a href = "team_standing.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Teams
                     <b class = "caret"></b></a> 
                 <ul class = "dropdown-menu">
                 <li><a href = "team_register.html">Register a Team</a></li>
@@ -50,35 +50,32 @@
               </ul>
             </li>
             <li class = "dropdown">
-                <a href = "player_profile.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Players
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Player
                     <b class = "caret"></b></a> 
                 <ul class = "dropdown-menu">
-                <li><a href = "player_profile.html">My Profile</a></li>
-                <li><a href = "top_player.html">Top Players</a></li>
+                <li><a href = "../players/login.html">My Profile</a></li>
+                <li><a href = "../players/team_profile.html">My Team</a></li>
+                <li><a href = "../players/top_player.html">Top Players</a></li>
               </ul>
             </li>
-            <li class = "dropdown">
-                <a href = "facility.html" class = "dropdown-toggle disabled" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">About
-                    <b class = "caret"></b></a> 
-                <ul class = "dropdown-menu">
-                <li><a href = "experience.html">The Ultimate Experience</a></li>
-                <li><a href = "facility.html">The Facilities</a></li>
-                <li><a href = "leagues.html">The Leagues</a></li>
-              </ul>
-            </li>
-            <li class = "dropdown">
-              <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Social Media 
-                  <b class = "caret"></b></a>
-              <ul class = "dropdown-menu">
-                <li><a href = "https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?sk=timeline">Facebook</a></li>
-                <li><a href = "#">Instagram</a></li>
-                <li><a href = "#">Twitter</a></li>
-                <li><a href = "#">Google+</a></li>
-                <li><a href = "#">LinkedIn</a></li>
-                <li><a href = "#">YouTube</a></li>
-              </ul>
-            </li>
+            <li><a href = "../about.html">About</a></li>
             <li><a href = "#contact" data-toggle = "modal">Contact Us</a></li>
+            <li class = "dropdown">
+                <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" data-hover = "dropdown" data-delay="100" data-close-others="false">Login
+                    <b class = "caret"></b>
+                </a> 
+                <ul class = "dropdown-menu">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <a href = "players/player_profile.html"><button type="submit" class="btn btn-default">Sign In</button></a>
+                </form>
+              </ul>
+            </li>
 
           </ul>
 
@@ -88,17 +85,6 @@
     </div>
 
 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
       
       
       
@@ -123,7 +109,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="../img/1.png"></a>
+                            <img alt="image" class="img-responsive" src="../../img/1.png"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -155,7 +141,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="../img/2.jpg"></a>
+                            <img alt="image" class="img-responsive" src="../../img/2.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -178,7 +164,7 @@
                                     <li>#10</li>
                                 </ul>
 
-                                <p class="hidden-xs">Aged nine, Rooney joined the youth team of Everton, for whom he made his professional début in 2002 at the age of 16. He spent two seasons at the Merseyside club, before moving to Manchester United for £25.6 million in the 2004 summer transfer window. Since then, with Rooney in the team, United have won the Premier League five times, the UEFA Champions League once, the FIFA Club World Cup once and the League Cup twice.
+                                <p class="hidden-xs">At the age of nine, Wayne Rooney joined the youth team of Everton, for whom he made his professional début in 2002 at the age of 16. He spent two seasons at the Merseyside club, before moving to Manchester United for £25.6 million in the 2004 summer transfer window. Since then, with Wayne Rooney in the team, United have won the Premier League five times, the freaking UEFA Champions League once, the FIFA Club World Cup once and the League Cup twice.
                                 </p><span class="fnt-smaller fnt-lighter fnt-arial">Posted December 3, 2014 </span>
                             </div>
                         </div>
@@ -187,7 +173,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="../img/3.jpg"></a>
+                            <img alt="image" class="img-responsive" src="../../img/3.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -210,7 +196,7 @@
                                     <li>#32</li>
                                 </ul>
 
-                                <p class="hidden-xs">David Robert Joseph Beckham is a retired English footballer looking to play a little footy in his spare time. He has played for Manchester United, Preston North End, Real Madrid, Milan, Los Angeles Galaxy, Paris Saint-Germain, and the England national team for which he holds the appearance record for an outfield player.[4] He was the first English player to win league titles in four countries, England, Spain, the United States and France. He announced his retirement at the end of the 2012–13 season and, on 18 May 2013, played the final game of his 20-year career.
+                                <p class="hidden-xs">David Beckham is a retired English footballer looking to play a little footy in his spare time. He has played for Manchester United, Preston North End, Real Madrid, Milan, LA Galaxy, Paris Saint-Germain, and the England national team for which he holds the appearance record for an outfield player.[4] He was the first English player to win league titles in four countries, England, Spain, the United States and France. He announced his retirement at the end of the 2013 season and, on 18 May 2013, played the final game of his 20-year career.
                                 </p><span class="fnt-smaller fnt-lighter fnt-arial">Posted December 10, 2014 </span>
                             </div>
                         </div>
@@ -224,7 +210,7 @@
                 <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="../img/4.jpg"></a>
+                            <img alt="image" class="img-responsive" src="../../img/4.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -256,7 +242,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="../img/5.jpg"></a>
+                            <img alt="image" class="img-responsive" src="../../img/5.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -279,7 +265,7 @@
                                     <li>#10</li>
                                 </ul>
 
-                                <p class="hidden-xs">A member of the inaugural class of the U.S. Soccer residency program in Bradenton, Florida, Donovan was declared player of the tournament for his role in the United States U17 squad that finished fourth in the '99 FIFA U-17 World Championship. He later signed with the German team Bayer Leverkusen. In 2005, after six years with the club, the majority of which were spent on loan at the San Jose Earthquakes, Donovan moved to the Los Angeles Galaxy.
+                                <p class="hidden-xs">A member of the inaugural class of the U.S. Soccer residency program in Bradenton, Florida, Donovan was declared player of the tournament for his role in the United States U17 squad that finished fourth in the '99 FIFA U-17 World Championship. He later signed with the German team Bayer Leverkusen. In 2005, after six years with the club, the majority of which were spent on loan at the San Freaking Jose Earthquakes, Donovan moved to the Los Angeles Galaxy.
                                 </p><span class="fnt-smaller fnt-lighter fnt-arial">Posted December 10, 2014 </span>
                             </div>
                         </div>
@@ -288,7 +274,7 @@
                     <div class="brdr bgc-fff pad-10 box-shad btm-mrg-20 property-listing">
                         <div class="media">
                             <a class="pull-left" href="#" target="_parent">
-                            <img alt="image" class="img-responsive" src="../img/6.jpg"></a>
+                            <img alt="image" class="img-responsive" src="../../img/6.jpg"></a>
 
                             <div class="clearfix visible-sm"></div>
 
@@ -311,7 +297,7 @@
                                     <li>#11</li>
                                 </ul>
 
-                                <p class="hidden-xs">Bale began his  career at Southampton, playing at left back and earning acclaim as a free kick specialist. He moved to Tottenham Hotspur in 2007, for an eventual 7 million fee. During his time at Spurs, tactical shifts transformed him into a more offensive player. From the 2009 season, Bale became an integral part of the team, rising to international attention during the 2010 UEFA Champions League. In 2013 he was named Player Player of the Year, and the UEFA Team of the Year. In 2013 he was also named PFA Young Player of the Year and the FWA Footballer of the Year. 
+                                <p class="hidden-xs">Bale began his  career at Southampton, playing at left back and earning acclaim as a free kicker. He moved to Tottenham in '07, for an eventual 7 mill fee. Tactical shifts transformed him into a more offensive player. From the '09 season, Bale became an integral part of the team, rising to international attention during the '10 UEFA Champions League. In '13 he was named Player Player of the Year, and the UEFA Team of the Year. In '13 he was also named PFA Young Player and the FWA Footballer of the Year. 
                                 </p><span class="fnt-smaller fnt-lighter fnt-arial">Posted December 10, 2014 </span>
                             </div>
                         </div>
@@ -326,46 +312,16 @@
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-      
-
+ 
 
     <!-- Footer -->
 
     <div class ="navbar navbar-default navbar-fixed-bottom">
       <div class = "container">
-        <p class = "navbar-text pull-left">Site By Thomas Fisher</p>
-        <a href = "#" class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
+        <p class = "navbar-text pull-left">Site By Lumberjacks</p>
+        <a href = "https://www.facebook.com/pages/Ultimate-Indoor-Soccer/123116327705217?sk=timeline" target="_blank">
+            <button class = "btn btn-social btn-facebook pull-right" >Facebook</button>
+        </a>
       </div>
     </div>
 
