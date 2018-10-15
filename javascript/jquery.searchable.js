@@ -33,7 +33,7 @@
         return typeof value === 'function';
     }
 
-    function Plugin( element, options ) {
+    var Plugin = ( element, options ) => {
         this.$element   = $( element );
         this.settings   = $.extend( {}, defaults, options );
 
