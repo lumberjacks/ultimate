@@ -29,7 +29,7 @@
         searchFocusCallback = false,
         searchBlurCallback = false;
 
-    function isFunction(value) {
+    var isFunction = (value) => {
         return typeof value === 'function';
     }
 
