@@ -29,7 +29,7 @@
         searchFocusCallback = false,
         searchBlurCallback = false;
 
-    function isFunction(value) {
+    var isFunction = (value) => {
         return typeof value === 'function';
     }
 
@@ -173,14 +173,14 @@
         getDefaultMatcher: function( term ) {
             term = $.trim( term ).toLowerCase();
 
-            return function( s ) {
+            return ( s ) => {
                 return ( s.toLowerCase().indexOf( term ) !== -1 );
             };
         }
     };
 
     $.fn[ pluginName ] = function( options ) {
-        return this.each( function() {
+        return this.each( () => {
             if ( !$.data( this, 'plugin_' + pluginName ) ) {
                 $.data( this, 'plugin_' + pluginName, new Plugin(this, options) );
             }
